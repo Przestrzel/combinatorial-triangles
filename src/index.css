@@ -20,6 +20,7 @@ code {
   align-items: center;
   gap: 4px;
 }
+
 .utils > div {
   display: flex;
   gap: 4px;
@@ -33,27 +34,27 @@ code {
   gap: 1px;
   align-items: center;
   justify-content: center;
-
   overflow: auto;
+}
 
-  .row {
-    display: flex;
-    gap: 1px;
-    align-items: center;
-    justify-content: center;
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    span {
-      display: inline-block;
-      border-style: solid;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-    .filled {
-      background-color: black;
-    }
-    .empty {
-      background-color: white;
-    }
-  }
+.row > span {
+  display: inline-block;
+  border-style: solid;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.row .filled {
+  background-color: black;
+  border: 1px solid black;
+}
+.row .empty {
+  background-color: white;
+  border: 1px solid white;
 }

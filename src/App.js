@@ -74,7 +74,7 @@ function App() {
               ))}
             </div>
           )) : triangle.map((row, rowIndex) => (
-            <div key={rowIndex} className="row">
+            <div key={rowIndex} className="row" style={{ height: squareSize}}>
               {row.map((value, colIndex) => (
                 <span
                   style={{width: squareSize, height: squareSize}}
